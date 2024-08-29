@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (TempData["AlertMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["AlertMessage"]
+        <button type="button" class="close" data-dismiss="alert" style="float:right">
+            <span>&times;</span>
+        </button>
+    </div>
+}
+
+<br />
+<div>
+    <a class="btn btn-primary" asp-action="createFromTemplate"
+       asp-controller="Home">
+        Create from template
+    </a>
+</div>
+
+<br />
+
+<section>
+    <h3> Using params</h3>
+    @using (Html.BeginForm("CreateWordDoc_msg","Home"))
+    {
+        <label>Message</label>
+        <input id="msg" class="form-control" type="text" name="msg" /><br />
+        <input type="submit" class="btn btn-primary" value="send MSg"/>
+    }
+</section>

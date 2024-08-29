@@ -1,0 +1,10 @@
+C:\Users\Gueta\apps\aspNetCore\obj\Release\net8.0\win-x64\PubTmp\Out\aspNetCore.exe
+C:\Users\Gueta\apps\aspNetCore\obj\Release\net8.0\win-x64\PubTmp\Out\appsettings.Development.json
+C:\Users\Gueta\apps\aspNetCore\obj\Release\net8.0\win-x64\PubTmp\Out\appsettings.json
+C:\Users\Gueta\apps\aspNetCore\obj\Release\net8.0\win-x64\PubTmp\Out\aspNetCore.dll
+C:\Users\Gueta\apps\aspNetCore\obj\Release\net8.0\win-x64\PubTmp\Out\aspNetCore.deps.json
+C:\Users\Gueta\apps\aspNetCore\obj\Release\net8.0\win-x64\PubTmp\Out\aspNetCore.runtimeconfig.json
+C:\Users\Gueta\apps\aspNetCore\obj\Release\net8.0\win-x64\PubTmp\Out\aspNetCore.pdb
+C:\Users\Gueta\apps\aspNetCore\obj\Release\net8.0\win-x64\PubTmp\Out\DocumentFormat.OpenXml.dll
+C:\Users\Gueta\apps\aspNetCore\obj\Release\net8.0\win-x64\PubTmp\Out\DocumentFormat.OpenXml.Framework.dll
+C:\Users\Gueta\apps\aspNetCore\obj\Release\net8.0\win-x64\PubTmp\Out\System.IO.Packaging.dll
