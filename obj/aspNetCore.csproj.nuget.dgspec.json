@@ -53,12 +53,6 @@
             "DocumentFormat.OpenXml": {
               "target": "Package",
               "version": "[3.1.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.8, )"
             }
           },
           "imports": [
