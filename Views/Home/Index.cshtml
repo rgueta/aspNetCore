@@ -12,7 +12,43 @@
     </div>
 }
 
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+        <button type="button" class="close" data-dismiss="alert" style="float:right">
+            <span>&times;</span>
+        </button>
+    </div>
+}
+
 <br />
+
+<table class="table table-responsive table-bordered">
+    <tr>
+        <th>File Name</th>
+        <th>Link</th>
+        @foreach (FileModel file in Model)
+        {
+        <tr>
+            <td>@file.FileName</td>
+            <td>
+                    @* <a asp-action="ReadWordDocument" asp-route-filename=@file.FileName
+            asp-controller="Home" >@file.FileName
+            </a> *@
+
+                    @* <a id="ajax">@file.FileName</a> *@
+                <button class="btn btn-outline-dark" id="ajax" name=@file.FileName>@file.FileName</button>
+            </td>
+        </tr>
+        }
+    </tr>
+</table>
+
+
+<br />
+
+
 <div>
     <a class="btn btn-primary" asp-action="createFromTemplate"
        asp-controller="Home">
@@ -22,12 +58,98 @@
 
 <br />
 
-<section>
+<form>
     <h3> Using params</h3>
-    @using (Html.BeginForm("CreateWordDoc_msg","Home"))
+    @using (Html.BeginForm("CreateWordDoc_msg", "Home"))
     {
         <label>Message</label>
         <input id="msg" class="form-control" type="text" name="msg" /><br />
-        <input type="submit" class="btn btn-primary" value="send MSg"/>
+        <input type="submit" class="btn btn-primary" value="send Msg"/>
+    }
+</form>
+
+<br />
+<div>
+    <a class="btn btn-primary" asp-action="addTable"
+       asp-controller="Home">
+        Crear Documento con tabla
+    </a>
+</div>
+
+<br />
+
+<section>
+    @using (Html.BeginForm("openDoc", "Home"))
+    {
+        <label>Document</label>
+        <input id="msg" class="form-control" type="text" name="filename" />
+
+        <br />
+        <input type="submit" class="btn btn-primary" value="Open Doc" />
     }
 </section>
+<br />
+<p>
+    <a class="btn btn-outline-dark"
+       asp-action="openDoc" asp-controller="Home" asp-route-filename="SEN-FDO-03-001-1.docx">Create Doc &raquo;</a>
+</p>
+<br />
+<section>
+    @using (@Html.BeginForm("CreateWordprocessingDocument", "Home", new { filename = "SEN-FDO-03-001-1.docx" }))
+    {
+        @*  <label>Document</label>
+         <input id="msg" class="form-control" type="text" name="filename" />
+
+         <br /> *@
+        <input type="submit" class="btn btn-primary" value="Word processing" />
+    }
+</section>
+
+<br />
+
+<form>
+    <a class="btn btn-outline-dark" asp-action="openDoc"
+       asp-controller="Home" asp-route-filename="SEN-FDO-03-001-1.docx">
+        Word processing &raquo;
+    </a>
+</form>
+<br />
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    
+
+
+    <hr />
+    <button id="downloadButton">Download Word File</button>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $("body").on("click", "#ajax", function () {
+            var file = $(this).attr("name");
+            $.ajax({
+                type: "POST",
+                url: "/home/ReadWordDocument?filename=" + file,
+                success: function () {
+                    alert("File updated OK --> " + file);
+                }
+            });
+        });
+    </script>
+    
+    <script>
+        document.getElementById('downloadButton').addEventListener('click', function () {
+            // Create a link element
+            var link = document.createElement('a');
+            link.href = '/download'; // URL of the ASP.NET Core endpoint
+            link.download = 'example.docx'; // Suggested file name
+            document.body.appendChild(link);
+
+            // Trigger the download
+            link.click();
+
+            // Clean up
+            document.body.removeChild(link);
+        });
+    </script>
+                        
+</div>
