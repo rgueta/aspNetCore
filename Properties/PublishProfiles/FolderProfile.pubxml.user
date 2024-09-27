@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>\\WIN2022SRV\wwwroot\aspNetCore</_PublishTargetUrl>
-    <History>True|2024-08-28T04:59:45.5107702Z||;False|2024-08-27T21:59:27.5479132-07:00||;</History>
+    <History>True|2024-09-08T04:51:46.2716663Z||;True|2024-09-03T20:11:09.6035836-07:00||;True|2024-09-03T17:46:15.4129814-07:00||;True|2024-08-29T21:56:10.5414529-07:00||;True|2024-08-27T21:59:45.5107702-07:00||;False|2024-08-27T21:59:27.5479132-07:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>

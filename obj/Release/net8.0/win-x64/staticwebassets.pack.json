@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\Files\\SEN-FDO-03-001-1.docx"
     },
     {
+      "Id": "C:\\Users\\Gueta\\apps\\aspNetCore\\wwwroot\\Files\\eDocs.docx",
+      "PackagePath": "staticwebassets\\Files\\eDocs.docx"
+    },
+    {
       "Id": "C:\\Users\\Gueta\\apps\\aspNetCore\\wwwroot\\Files\\microsoft.netframework.referenceassemblies.net45.1.0.3.nupkg",
       "PackagePath": "staticwebassets\\Files\\microsoft.netframework.referenceassemblies.net45.1.0.3.nupkg"
     },

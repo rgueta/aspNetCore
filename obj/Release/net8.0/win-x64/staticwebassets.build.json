@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "C+fF0RZx18oZYAII/Cd1VmmYW0PMLBX8nxc4JcPcxck=",
+  "Hash": "63k80/WwW4E4Pn18TWOOnLj869q+7sJK1bYkOWeTaAM=",
   "Source": "aspNetCore",
   "BasePath": "_content/aspNetCore",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Gueta\\apps\\aspNetCore\\wwwroot\\Files\\eDocs.docx",
+      "SourceId": "aspNetCore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gueta\\apps\\aspNetCore\\wwwroot\\",
+      "BasePath": "_content/aspNetCore",
+      "RelativePath": "Files/eDocs.docx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\eDocs.docx"
     },
     {
       "Identity": "C:\\Users\\Gueta\\apps\\aspNetCore\\wwwroot\\Files\\microsoft.netframework.referenceassemblies.net45.1.0.3.nupkg",
